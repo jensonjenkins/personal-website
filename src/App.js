@@ -1,32 +1,34 @@
 import Navbar from './components/Navbar'
-
-
+import HelloPage from './components/HelloPage/hello';
+import Education from './components/EducationPage/Education';
+import Projects from './components/ProjectsPage/Projects';
+import StickConfused from './components/ProjectsPage/StickConfused.jpg'
+import { Simulate } from 'react-dom/test-utils';
 function App() {
-  
+
   return (
     <div className="App">
       <Navbar />
-      <h1 className='hellotext'>Hello</h1>
-
       <section id='page1'>
-        <h1 className='test1'>About Me</h1>
-
+        <HelloPage />
       </section>
-              
+
+
+      {/* <section id='page1'>
+        <AboutMe />
+      </section> */}
+
       <section id='page2'>
-        <h1 className='test2'>Experience</h1>
-        <p>This is still my website</p>
+        <img className='temp404' src={StickConfused}></img>
+        <h1>its empty, that's weird..</h1>
       </section>
 
-      <section id='page3'>
-        <h1 className='test3'>Education</h1>
-        <p>Nanyang Technological University</p>
-        <p>Information Engineering and Media</p>
+      <section className='page3'>
+        <Education />
       </section>
 
-      <section id='page4'>
-        <h1 className='test4'>Projects</h1>
-        <p>This is still my website</p>
+      <section className='page4'>
+        <Projects />
       </section>
 
 

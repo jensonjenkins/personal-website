@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Space+Mono:wght@700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hellotext{
+    margin-top: 230px;
+    align-self: center;
+    font-size: 2rem;
+    height: auto;
+    letter-spacing: 0.7px;
+    /* border: 1px solid red; */
+    align-self: flex-start;
+    margin-bottom: 0px;
+
+}
+.nametext{
+    align-self: center;
+    font-size: 3.5rem;
+    letter-spacing: 0.7px;
+    font-weight: 700;
+    /* border: 1px solid red; */
+    align-self: flex-start;
+    margin-top: -15px;
+
+}
+.HelloContainer{
+    margin-top: 0px;
+    width:100vw;
+    height:100vh;
+    /* border:1px solid black; */
+    flex-direction: row;
+    display: flex;
+}
+
+.LeftH{
+    flex-direction: column;
+    display: flex;
+    height:100%;
+    width: 55%;
+    /* border: 1px solid red; */
+    
+}
+.LeftR{
+    height:100%;
+    width:45%;
+    /* border: 1px solid black; */
+
+}
+.textBlock{
+    text-align: justify;
+    text-justify: auto;
+    width:30vw;
+    height:500px;
+    align-self: flex-start;
+    z-index: -0;
+
+}
+.tightBound{
+    margin-top: 50px;
+    align-self: flex-end;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+    align-self: flex-end;
+    display: flex;
+    /* border: 1px solid black; */
+}
+.StickImg{
+    width: 800px;
+    height: 750px;
+    margin-left: -230px;
+    margin-top: -10px;
+    z-index: -5;
+}
+.blueLine{
+    border:1px solid rgb(0, 120, 255);
+    width: 160px;
+    height: 0px;
+}
+.scrollText{
+    margin-top: 40px;
+    font-size: 14px;;
+    color: rgb(128, 128, 128);
+    letter-spacing: 0.7px;
+}
