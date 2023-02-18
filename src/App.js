@@ -2,7 +2,7 @@ import Navbar from './components/Navbar'
 import HelloPage from './components/HelloPage/hello';
 import Education from './components/EducationPage/Education';
 import Projects from './components/ProjectsPage/Projects';
-import StickConfused from './components/ProjectsPage/StickConfused.jpg'
+import errorImg from './components/tempImg/404error.jpg'
 import { Simulate } from 'react-dom/test-utils';
 function App() {
 
@@ -14,7 +14,8 @@ function App() {
       </section>
 
       <section id='page2'>
-        <img className='temp404' src={StickConfused}></img>
+      <h1 className='TitleE'>Career</h1>
+        <img className='temp404' src={errorImg}></img>
         <h1>its empty, that's weird..</h1>
       </section>
 
