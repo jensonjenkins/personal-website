@@ -13,11 +13,6 @@ function App() {
         <HelloPage />
       </section>
 
-
-      {/* <section id='page1'>
-        <AboutMe />
-      </section> */}
-
       <section id='page2'>
         <img className='temp404' src={StickConfused}></img>
         <h1>its empty, that's weird..</h1>
