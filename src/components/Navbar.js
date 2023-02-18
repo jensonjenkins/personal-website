@@ -12,7 +12,7 @@ const Navbar = () => {
         <header>
             <nav className = {`${T}`}>
                 
-                <Link to="page1" spy = {true} smooth={true} offset={50} duration ={500}
+                <Link to="page1" spy = {true} smooth={true} offset={0} duration ={500}
                 >About Me</Link>
                 <Link to="page2" spy = {true} smooth={true} offset={50} duration ={500}
                 >Career</Link>

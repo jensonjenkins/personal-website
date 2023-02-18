@@ -2,6 +2,21 @@
 import './Projects.css'
 
 const Projects =()=>{
+    const AnimateOnScrollProj = (classArg) => {
+        window.addEventListener('scroll', () => {
+            const img = document.querySelector(classArg);
+            const imgPosition = img.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight;
+            console.log(`imgPosition: ${imgPosition}, screenPosition: ${screenPosition}`);
+            if (imgPosition < screenPosition) {
+                img.classList.remove('hidden');
+                img.classList.add('visible')
+            }
+        });
+    }
+    AnimateOnScrollProj(".ProjectsM")
+    AnimateOnScrollProj(".ProjectsR")
+    AnimateOnScrollProj(".TitleP")
     return(
         <>
             <div className='ContainerP'>

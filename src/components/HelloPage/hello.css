@@ -13,6 +13,7 @@
     /* border: 1px solid red; */
     align-self: flex-start;
     margin-bottom: 0px;
+    animation: slideIn 0.8s ease-in-out;
 
 }
 .nametext{
@@ -23,7 +24,7 @@
     /* border: 1px solid red; */
     align-self: flex-start;
     margin-top: -15px;
-
+    animation: slideIn 1s ease-in-out;
 }
 .HelloContainer{
     margin-top: 0px;
@@ -36,6 +37,7 @@
 
 .LeftH{
     flex-direction: column;
+
     display: flex;
     height:100%;
     width: 55%;
@@ -55,7 +57,44 @@
     height:500px;
     align-self: flex-start;
     z-index: -0;
+    animation: slideIn 1.3s ease-in-out;
 
+}
+
+@keyframes slideIn {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideInImg {
+    0%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideInScroll {
+    0%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    80%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .tightBound{
     margin-top: 50px;
@@ -69,20 +108,26 @@
     /* border: 1px solid black; */
 }
 .StickImg{
-    width: 800px;
+    width: 520px;
     height: 750px;
-    margin-left: -230px;
     margin-top: -10px;
     z-index: -5;
+    animation: slideInImg 1.4s ease-in-out;
+}
+
+.RightH{
+    /* border:1px solid black; */
 }
 .blueLine{
     border:1px solid rgb(0, 120, 255);
     width: 160px;
     height: 0px;
+    animation: slideInScroll 2.3s ease-in-out;
 }
 .scrollText{
     margin-top: 40px;
     font-size: 14px;;
     color: rgb(128, 128, 128);
     letter-spacing: 0.7px;
+    animation: slideInScroll 2.0s ease-in-out;
 }
