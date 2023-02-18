@@ -15,9 +15,9 @@ const Navbar = () => {
                 <Link to="page1" spy = {true} smooth={true} offset={50} duration ={500}
                 >About Me</Link>
                 <Link to="page2" spy = {true} smooth={true} offset={50} duration ={500}
-                >Experience</Link>
-                <Link to="page3" spy = {true} smooth={true} offset={50} duration ={500}
                 >Career</Link>
+                <Link to="page3" spy = {true} smooth={true} offset={50} duration ={500}
+                >Education</Link>
                 <Link to="page4" spy = {true} smooth={true} offset={50} duration ={500}
                 >Projects</Link>
 
