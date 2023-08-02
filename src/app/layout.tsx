@@ -27,7 +27,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <div className='flex flex-row w-1070 min-h-700 mx-auto mt-24'>
+      <div className='flex flex-row w-1070 min-h-700 mx-auto mt-24 mb-20'>
         <Nav />
         <div className={`flex flex-col min-h-full w-2/3 border border-transparent border-l-gray-400 p-4 pl-6 pt-0 ${inter.className}`}>
           <Directory/>

@@ -6,7 +6,6 @@ import TextLink from "./TextLink"
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { CgDarkMode } from 'react-icons/cg'
 import { BiLogoGmail } from 'react-icons/bi'
-import { useState, useEffect } from "react"
 
 type NavProps = {
     onPropChange: (value: boolean) => void
@@ -22,13 +21,18 @@ const Nav= () => {
             <div className="relative flex flex-col h-700 w-1/3 p-6 pt-3">
                 <div className="flex flex-row">
                     <div className="border w-18 h-18 rounded-full ">
-
+                        <Image 
+                        className="w-18 h-18 rounded-full"
+                        src="/face.jpg" 
+                        alt=""
+                        width={72}
+                        height={72}/>
                     </div>
                     <div className="flex flex-col">
-                        <p className="ml-4 mt-1.5 text-xl font-semibold">
+                        <p className="ml-3 mt-1.5 text-xl font-semibold">
                             Dave Gunawan
                         </p>
-                        <p className="ml-4 my-1 text-gray-400">
+                        <p className="ml-3 my-1 text-gray-400">
                             IEM '26 {<TextLink name="@NTU" target="https://www.ntu.edu.sg/" blank={true}/>}.
                         </p>
                     </div>
@@ -43,12 +47,12 @@ const Nav= () => {
                 <Link className={linkClass} href="/resume">Resume</Link>
 
                 <div className="absolute bottom-2">
-                    <p className="text-gray-400 text-center">Dave Martheen Gunawan | Last Updated 01/08/2023 14:59:23 UTC</p>
+                    <p className="text-gray-400 text-center">Dave Martheen Gunawan | Last Updated 02/08/2023 14:59:23 UTC</p>
 
                     <div className="flex flex-row w-full justify-center space-x-2 mt-4">
-                        <a className={iconClass}><BiLogoGmail className="m-auto my-1.5" size={26} color="#22262A" /></a>
-                        <a className={iconClass}><FaGithub className="m-auto my-1.5" size={26} color="#22262A" /></a>
-                        <a className={iconClass}><FaLinkedinIn className="m-auto my-1.5" size={26} color="#22262A" /></a>
+                        <a className={iconClass} href="dave.martheen@gmail.com" target="_blank"><BiLogoGmail className="m-auto my-1.5" size={26} color="#22262A" /></a>
+                        <a className={iconClass} href="https://github.com/jensonjenkins" target="_blank"><FaGithub className="m-auto my-1.5" size={26} color="#22262A" /></a>
+                        <a className={iconClass} href="https://www.linkedin.com/in/davegunawan" target="_blank"><FaLinkedinIn className="m-auto my-1.5" size={26} color="#22262A" /></a>
                     </div>
                 </div>
             </div>

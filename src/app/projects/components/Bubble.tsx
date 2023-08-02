@@ -16,7 +16,7 @@ const Bubble: React.FC<bubbleProps> = ({ title, desc, link, skills }) => {
                         <TextLink name={title} target={`/projects/${title}`} blank={false} />
                     </a>
                     <a href={link} target="_blank">
-                        <LuExternalLink className="mt-0.5 absolute right-0 hover:cursor-pointer" />
+                        <LuExternalLink className="transition box-content p-0.5 hover:bg-gray-200 rounded-md mt-0.5 absolute right-0 hover:cursor-pointer" />
                     </a>
                 </div>
                 <p className="text-sm mt-2">

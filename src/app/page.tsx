@@ -27,16 +27,16 @@ export default function Home() {
           link="https://github.com/jensonjenkins/transformer-chatbot"
           skills={[]} />
 
-        <div className='my-3 flex flex-row'>
-          <>If you're interested, you can check more of them out on the </>
-          <p className='font-medium'>&nbsp;Projects&nbsp;</p>
-          <> page.</>
-        </div>
+        <p className='my-3'>
+          If you're interested, you can check more of them out on the 
+          <TextLink name=" Projects " target='/projects' blank={false} />
+           page.
+        </p>
 
 
         <p className='mt-3'>This website is built in
 
-          <TextLink name=' Next.js' target="https://nextjs.org/docs" blank={true} />,
+          <TextLink name=' Next.js 13' target="https://nextjs.org/docs" blank={true} />,
           written with
 
           <TextLink name=' Typescript' target='https://www.typescriptlang.org/' blank={true} /> and

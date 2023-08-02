@@ -11,7 +11,7 @@ const Directory = () => {
             <div className="flex flex-row mb-3">
                 {router.map((part, index) => <>
                     <FiChevronRight className="" size={26} />
-                    <Link href={`/${part}`} className='font-medium'>{part}</Link>
+                    <Link href={`/${part}`} className='font-medium hover:underline'>{part}</Link>
                 </>
                 )}
             </div>
