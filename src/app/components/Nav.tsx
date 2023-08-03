@@ -20,7 +20,7 @@ const Nav = () => {
                     <div className=" w-18 h-18 rounded-full ">
                         <Image
                             className="w-18 h-18 rounded-full"
-                            src="/face.jpg"
+                            src="/personal-website/face.jpg"
                             alt=""
                             width={72}
                             height={72} />
@@ -42,7 +42,7 @@ const Nav = () => {
 
                     <Link className={linkClass} href="/" >About</Link>
                     <Link className={linkClass} href="/projects">Projects</Link>
-                    <Link className={linkClass} href="/resume">Resume</Link>
+                    <a className={linkClass} href="/personal-website/resume.pdf" target="_blank">Resume</a>
 
                 </div>
                 <Footer classProps=" absolute bottom-2 max-md:opacity-0 max-md:hidden"/>
