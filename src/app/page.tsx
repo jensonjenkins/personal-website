@@ -36,7 +36,7 @@ export default function Home() {
 
         <p className='my-3 '>
           If you're interested, you can check more of them out on the
-          <TextLink name=" Projects " target='/projects' blank={false} />
+          <TextLink name=" Projects " target='/personal-website/projects' blank={false} />
           page.
         </p>
 

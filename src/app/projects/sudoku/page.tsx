@@ -34,7 +34,7 @@ const SudokuPage = () => {
 
                 <Image
                     alt="java sudoku demo"
-                    src="/sudoku1.jpg?timestamp=123"
+                    src="/personal-website/sudoku1.jpg?timestamp=123"
                     width={400}
                     height={400} />
             </div>

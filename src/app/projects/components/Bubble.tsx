@@ -14,7 +14,7 @@ const Bubble: React.FC<bubbleProps> = ({ title, desc, link, skills, date }) => {
             <div className="w-full h-auto border rounded-lg p-2 px-3 my-2 ">
                 <div className="flex flex-row w-full relative">
                     <div className="text-lg font-semibold hover:cursor-pointer">
-                        <TextLink name={title} target={`/projects/${title}`} blank={false} />
+                        <TextLink name={title} target={`/personal-website/projects/${title}`} blank={false} />
 
                         <p className="font-semibold text-sm mt-0.5 md:hidden md:opacity-0">{date}</p>
                     </div>

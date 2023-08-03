@@ -38,7 +38,7 @@ const TransformerPage = () => {
 
                 <Image
                     alt="transformer-chatbot demo"
-                    src="/tchabot1.jpg?timestamp=1234"
+                    src="/personal-website/tchabot1.jpg?timestamp=1234"
                     width={700}
                     height={465} />
             </div>

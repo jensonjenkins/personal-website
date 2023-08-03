@@ -4,7 +4,7 @@ import { FiChevronRight } from 'react-icons/fi'
 import { usePathname } from 'next/navigation'
 
 const Directory = () => {
-    const router = usePathname().split('/').slice(1)
+    const router = usePathname().split('/').slice(2)
 
     return (
         <>

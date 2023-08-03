@@ -42,13 +42,13 @@ const SRGANPage = () => {
             <div className="flex flex-row max-lg:flex-col max-lg:w-fit mx-auto mt-3 p-1 border rounded-lg">
                 <Image
                     alt="SRGAN demo"
-                    src="/GAN1.jpg"
+                    src="/personal-website/GAN1.jpg"
                     width={330}
                     height={165}/>
 
                 <Image
                     alt="SRGAN demo"
-                    src="/GAN2.jpg"
+                    src="/personal-website/GAN2.jpg"
                     width={330}
                     height={165}/>
             </div>

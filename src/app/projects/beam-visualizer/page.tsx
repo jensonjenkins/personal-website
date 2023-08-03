@@ -28,7 +28,7 @@ const BeamPage = () => {
             <div className="flex flex-row mt-3 p-2 mx-auto border rounded-lg">
                 <Image
                     alt="beam-visualizer demo"
-                    src="/pyvi1.png?timestamp=123"
+                    src="/personal-website/pyvi1.png?timestamp=123"
                     width={465}
                     height={700} />
             </div>

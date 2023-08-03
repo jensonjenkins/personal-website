@@ -30,7 +30,7 @@ const ChatbotPage = () => {
 
                 <Image
                     alt="transformer-chatbot demo"
-                    src="/chatbot-web1.jpg"
+                    src="/personal-website/chatbot-web1.jpg"
                     width={700}
                     height={465} />
             </div>
