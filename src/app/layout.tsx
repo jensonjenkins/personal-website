@@ -1,20 +1,13 @@
 "use client"
 
 import './globals.css'
-import { Metadata } from 'next'
+
 import { Inter } from 'next/font/google'
 import Nav from './components/Nav'
 import Directory from './components/Directory'
 import Footer from './components/Footer'
 import Providers from './providers'
 const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'About | Dave Gunawan',
-  description: 'Personal Website',
-}
-
-
 
 export default function RootLayout({
   children,
