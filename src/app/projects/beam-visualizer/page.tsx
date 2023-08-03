@@ -1,11 +1,24 @@
 import Image from "next/image"
 import TextLink from "@/app/components/TextLink"
+import { Metadata } from "next"
+import { LuExternalLink } from "react-icons/lu"
 
+export const metadata:Metadata= {
+  title: 'beam-visualizer | Dave Gunawan',
+  description: 'Personal Website',
+}
 
 const BeamPage = () => {
     return (
         <>
-            <p className='font-bold text-3xl mb-3'>beam-visualizer</p>
+          
+            <div className="flex flex-row">
+
+                <p className='font-bold text-3xl mb-3'>beam-visualizer</p>
+                <a href="https://github.com/jensonjenkins/beam-visualizer" target="_blank">
+                    <LuExternalLink size={25} className="transition  box-content p-0.5 hover:bg-gray-100 rounded-md ml-2 mt-1 hover:cursor-pointer" />
+                </a>
+            </div>
 
             <p className="font-semibold mt-1 text-lg">Description</p>
             <p className='mt-2 mb-1'><TextLink name="beam-visualizer " target="https://github.com/jensonjenkins/beam-visualizer" blank={true} />
@@ -14,8 +27,8 @@ const BeamPage = () => {
 
             <div className="flex flex-row mt-3 p-2 mx-auto border rounded-lg">
                 <Image
-                    alt="transformer-chatbot demo"
-                    src="/pyvi1.png"
+                    alt="beam-visualizer demo"
+                    src="/pyvi1.png?timestamp=123"
                     width={465}
                     height={700} />
             </div>

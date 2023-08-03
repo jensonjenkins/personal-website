@@ -9,12 +9,18 @@ const Directory = () => {
     return (
         <>
             <div className="flex flex-row mb-3">
-                {router.map((part, index) => <>
-                    <FiChevronRight className="" size={26} />
-                    <Link href={`/${part}`} className='font-medium hover:underline'>{part}</Link>
+                {router.map((part, i) => i !== router.length - 1 ?
+                    <>
+                        <FiChevronRight key={i} className="" size={26} />
+                        <Link href={`/${part}`} key={i+100} className='font-medium hover:underline'>{part}</Link>
+                    </>
+                    :
+                    <>
+                        <FiChevronRight key={i} className="" size={26} />
+                        <p key={i+100} className='font-medium'>{part}</p>
                 </>
                 )}
-            </div>
+        </div >
         </>
     )
 }

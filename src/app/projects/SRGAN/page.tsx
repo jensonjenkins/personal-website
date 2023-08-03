@@ -1,16 +1,32 @@
 import TextLink from "@/app/components/TextLink"
 import Image from "next/image"
+import { Metadata } from "next"
+import { LuExternalLink } from "react-icons/lu"
 
+export const metadata:Metadata= {
+  title: 'SRGAN | Dave Gunawan',
+  description: 'Personal Website',
+}
 const SRGANPage = () => {
     return (
         <>  
-            <p className='font-bold text-3xl mb-3'>SRGAN</p>
+            
+            <div className="flex flex-row">
+
+                <p className='font-bold text-3xl mb-3'>SRGAN</p>
+                <a href="https://github.com/jensonjenkins/SRGAN" target="_blank">
+                    <LuExternalLink size={25} className="transition  box-content p-0.5 hover:bg-gray-100 rounded-md ml-2 mt-1 hover:cursor-pointer" />
+                </a>
+            </div>
+
+
             <p className="font-semibold mt-1 text-lg">Description</p>
             <p className='mt-2 mb-1'><TextLink name="SRGAN " target="https://github.com/jensonjenkins/SRGAN" blank={true} />
                 is a type of generative adversarial network designed by C. Ledig and his team.
                 The main purpose of this GAN is to take a low-resolution image of size 32x32 pixels as input and then enhance it to
                 generate a higher-resolution image of size 128x128 pixels as the output. It is capable of significantly
-                improving the image quality by increasing its resolution through a process of adversarial training.</p>
+                improving the image quality by increasing its resolution through the process of simulating a 
+                <TextLink name=" zero-sum game" target="https://en.wikipedia.org/wiki/Zero-sum_game" blank={true}/>.</p>
             <p className="mt-1 mb-3">In this project,
                 I've implemented their findings by building and training the
                 <TextLink
@@ -23,7 +39,7 @@ const SRGANPage = () => {
                     target="https://press.liacs.nl/mirflickr/mirdownload.html"
                     blank={true} /> dataset.</p>
 
-            <div className="flex flex-row mt-3 p-1 pt-2 border rounded-lg">
+            <div className="flex flex-row max-lg:flex-col max-lg:w-fit mx-auto mt-3 p-1 border rounded-lg">
                 <Image
                     alt="SRGAN demo"
                     src="/GAN1.jpg"
